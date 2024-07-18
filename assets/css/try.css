@@ -4,11 +4,13 @@
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
 }
 
 body {
+    width: 100%;
     background-color: #222224;
-    background-image: url("../images/bg-cover.jpg");
+    /* background-image: url("../images/bg-cover.jpg"); */
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -76,6 +78,7 @@ nav ul li a:hover {
 }
 
 .heading{
+    width: 100%;
     display: flex;
     justify-content: center;
     gap: 10rem;
@@ -109,9 +112,116 @@ nav ul li a:hover {
     font-weight: 200;
 }
 
+/* Slider Carousel CSS Section | inCompele */
+.carousel {
+    height: 80vh;    
+}
+
 section {
     display: flex;
-    height: 100vh;
+}
+
+.section01 {
+    width: 100%;
+    background-color: #2e2c2b;
+}
+
+.section02, .section04 {
+
+    display: flex;
+    margin: auto;
+    padding: 2rem;
+    /* height: 100vh; */
+    width: 100%;
+    background-color: #fff;
+    color: hsl(240, 3%, 14%);
     justify-content: center;
-    align-items: center;
+    text-align: center;
+    text-wrap: pretty;
+}
+
+.section03 {
+    height: 100%;
+    width: 100%;
+    padding: 2rem;
+    background-color: #f0f0f0;
+    color: hsl(240, 3%, 14%);
+    justify-content: center;
+    text-align: center;
+    text-wrap: pretty;
+
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    padding: 0 25%;
+    font-size: 1rem;
+}
+
+.content p {
+    text-wrap: inherit;
+    margin: 1rem;
+}
+
+/* Seprator class */
+.wt-seprator-outer {
+    display: flex;
+    margin: 0 25%;
+    justify-content: center;
+    margin-bottom: 4rem;
+    height: 3px;
+    background: #ff8838;
+    border-radius: 50%;
+}
+
+.img-cards {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.img-card {
+    padding: 20px;
+    margin: 1rem;
+    background: #fff;
+    font-weight: bold;
+}
+
+.img-card img {
+    height: 200px;
+}
+
+.sub-section-card div{
+    /* display: flex;
+    gap: 10px;
+    height: 40px;
+    width: 300px;
+    text-wrap: stable;
+    display: flex; */
+}
+
+.left-sub-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 40px;
+}
+
+.content-card-header {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.content-card-header img {
+    height: 40px;
+}
+
+.content-card-info {
+    display: flex;
+    text-wrap: stable;
 }
