@@ -5,6 +5,8 @@
     padding: 0;
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
 }
 
 body {
@@ -15,9 +17,10 @@ body {
     background-repeat: no-repeat;
     height: 100vh;
     color: #fff;
-
 }
 
+
+/* text based logo */
 .logo {
     color: #f9a872;
     font-size: 2rem;
@@ -34,8 +37,8 @@ nav {
 }
 
 nav ul {
-    font-size: 1.2rem;
-    font-weight: 300;
+    font-size: 1.1rem;
+    font-weight: 200;
     display: flex;
     gap: 40px;
     text-decoration: none;
@@ -131,7 +134,7 @@ section {
     display: flex;
     margin: auto;
     padding: 2rem;
-    /* height: 100vh; */
+    height: 100%;
     width: 100%;
     background-color: #fff;
     color: hsl(240, 3%, 14%);
@@ -206,10 +209,10 @@ section {
 }
 
 .content-card {
+    height: 180px;
+    width: 300px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    height: 40px;
 }
 
 .content-card-header {
@@ -224,4 +227,68 @@ section {
 .content-card-info {
     display: flex;
     text-wrap: stable;
+}
+
+.sub-sections {
+    display: flex;
+}
+
+
+.middle-sub-section img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+
+.footer {
+    display: flex;
+    background: #000;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 20px;
+    height: 300px;
+    width: 25%;
+    gap: 10px;
+    font-weight: 100;
+    background: #222224;
+}
+
+.footer-left img {
+    height: 100px;
+    width: 200px;
+}
+
+.footer-right {
+    display: flex;
+    padding: 4rem;
+    flex-direction: column;
+}
+
+.footer-top {
+    display: flex;
+    width: 75%;
+    gap: 2cm;
+    margin: 1rem;
+}
+
+.footer-bottom div{
+    display: inline-flex;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+
+}
+
+.footer-bottom a{
+    padding: 1rem 1rem;
+    background: #2e2c2b;
+    color: #f9a872;
+    border-radius: 20px;
 }
