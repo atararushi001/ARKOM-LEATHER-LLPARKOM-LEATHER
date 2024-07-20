@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <title>ARKOM - Product Detail</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .navbar {
+            padding: 0.8rem 0;
+            background-color: #333;
+        }
+        .navbar a {
+            color: #fff;
+        }
+        .hero-section {
+            background-image: url('assets/images/bg01.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 6rem 0;
+            color: #fff;
+        }
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .product-detail-section {
+            padding: 4rem 0;
+            background-color: #fff;
+        }
+        .product-detail-section img {
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+        .product-detail-section .description {
+            margin: 2rem 0;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        .product-detail-section .btn {
+            background: #c3831c;
+            color: #fff;
+            border: none;
+        }
+        .product-detail-section .btn:hover {
+            background: #f1a222;
+            color: #fff;
+        }
+        .sidebar {
+            background-color: #f1f1f1;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .sidebar h3 {
+            font-size: 1.5rem;
+            color: #c3831c;
+        }
+        .related-products h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #c3831c;
+        }
+        .related-products .product-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .related-products .product-card:hover {
+            transform: scale(1.05);
+        }
+        .related-products img {
+            max-width: 100%;
+            border-bottom: 1px solid #ddd;
+        }
+        .related-products .product-card h3 {
+            font-size: 1.25rem;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar Section Start -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/logo.png" alt="logo-img" height="36px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Product
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="quality.html">Quality & R&D</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="inspection.html">Inspection</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Navbar Section End -->
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center">
+        <div class="container">
+            <h1>Product 1</h1>
+        </div>
+    </section>
+
+    <!-- Product Detail Section -->
+    <section class="product-detail-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="assets/images/bg01.jpg" alt="Product Detail Image" class="img-fluid mb-4">
+                </div>
+                <div class="col-md-6">
+                    <h2>Product 1</h2>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tincidunt orci at dui commodo, sed laoreet ex iaculis. Proin varius, nisi et feugiat consectetur, felis odio iaculis arcu, sed volutpat erat nisl id augue. Duis aliquet arcu in velit venenatis.</p>
+                    <button type="button" class="btn btn-primary">Get the Product</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products Section -->
+    <section class="related-products py-5">
+        <div class="container">
+            <h2>Related Products</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="product-card">
+                        <img src="assets/images/leather-bag.jpg" alt="Related Product 1">
+                        <div class="p-3">
+                            <h3>Product 2</h3>
+                            <a href="#" class="btn btn-outline-dark">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="product-card">
+                        <img src="assets/images/leather-bag.jpg" alt="Related Product 2">
+                        <div class="p-3">
+                            <h3>Product 3</h3>
+                            <a href="#" class="btn btn-outline-dark">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="product-card">
+                        <img src="assets/images/leather-bag.jpg" alt="Related Product 3">
+                        <div class="p-3">
+                            <h3>Product 4</h3>
+                            <a href="#" class="btn btn-outline-dark">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer section Start -->
+    <footer class="bg-dark text-light pt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>Contact Us</h5>
+                    <p>Email: contact@leathershop.com</p>
+                    <p>Phone: +123 456 7890</p>
+                    <p>Address: 123 Leather Street, City, Country</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-light">Home</a></li>
+                        <li><a href="about.html" class="text-light">About Us</a></li>
+                        <li><a href="product.html" class="text-light">Products</a></li>
+                        <li><a href="#" class="text-light">Collections</a></li>
+                        <li><a href="contact.html" class="text-light">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Follow Us</h5>
+                    <a href="#" class="text-light mr-2"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-light mr-2"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-light mr-2"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-light mr-2"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="text-center py-3">
+                &copy; 2024 Leather Shop. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <!-- Footer section End -->
+
+    <!-- Script Section -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
