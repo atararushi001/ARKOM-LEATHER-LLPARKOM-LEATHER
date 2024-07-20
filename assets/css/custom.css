@@ -1,11 +1,256 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
-* {
-    font-family: "Poppins", sans-serif;
-    background: #222224;
-    color: white;
+        body {
+          /* font-family: monospace; */
+          letter-spacing: 0.1rem;
+          font-family: "Roboto Condensed", sans-serif;
+
+        }
+
+        h1 {
+            font-size: 4rem;
+        }
+
+        h2 {
+            font-size: 5rem;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-weight: 400;
+        }
+
+        .navbar {
+          display: flex;
+          padding: 0.8rem 2rem;
+        }
+
+        /* temp fix */
+        .container-fluid {
+          margin-left: 10rem;
+         padding: 0 4rem;
+        }
+
+        .nav-link{
+          font-weight: 500;
+          margin-left: 1.5rem;
+          color: #f8f9fa;
+        }
+
+        .nav-link:hover{
+          color: #f1a222;
+        }
+
+        .carousel-item {
+          background: #000;
+          height: 100vh;
+        }
+
+        .overlay-img {
+          opacity: 0.2;
+        }
+
+        .heading {
+          position: absolute;
+          bottom: 3rem;
+          padding: 4rem;
+          color: #fff;
+        }
+
+        .section02, .section04 {
+          color: #c3831c;
+          background: #171717;
+          padding: 1rem;
+        }
+
+        .section03 {
+          color: #c3831c;
+          /* background: #222222; */
+          padding: 1rem;
+        }
+
+        .section03 p {
+            color: #333;
+        }
+
+        .card-body {
+          padding: 1rem;
+          color: #c3831c;
+          /* background-color: rgb(36, 25, 4); */
+        }
+
+        .card-body .btn {
+          text-decoration: none;
+          border: solid 1px white;
+          background-color: #c3831c;
+        }
+
+        .card {
+          border: 2px solid white;
+          border-radius: 0;
+          background: #222222;
+          transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.navbar .navbar-expand-lg {
-    color: white;
+.card-img-top {
+    object-fit: cover;
+    height: 200px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.card-text {
+    color: #666;
+}
+
+.btn-primary {
+    font-weight: 800;
+    border-radius: 24px;
+    border: 3px solid #444;
+    color: #444;
+    background-color: transparent;
+}
+
+.btn-primary:hover {
+    background-color: #c3831c;
+    padding: 0 200px;
+    border-width: 3px solid #444;
+    animation: all 0.3 ease-out;
+}
+
+/* Custom CSS for Featured Collections */
+.card-img-top {
+    object-fit: cover;
+    height: 300px;
+}
+
+/* Custom CSS for Customer Testimonials */
+.card-body {
+    /* background-color: #f8f9fa; */
+    border-top: 2px solid white;
+    background: transparent;
+    border-radius: 0.25rem;
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #ffffff;
+    padding: 0.5rem;
+    background: #f1a222;
+}
+
+.card-text {
+    color: #c3831c;
+    font-style: italic;
+}
+
+/* bold text */
+.bold {font-weight: bolder;}
+
+.follow-us {
+  margin-top: 1rem;
+  display: flex;
+  color: #c3831c;
+  gap: 40px;
+}
+
+footer {
+    border-top: 4px dashed #c3831c;
+    border-bottom: 4px dashed #c3831c;
+    background-color: #222222;
+    color: #c3831c;
+}
+
+footer a {
+    color: #c3831c;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: #f1a222;
+    text-decoration: none;
+}
+
+footer h5 {
+  color: #f1a222;
+  font-weight: bold;
+}
+
+footer .fab {
+    font-size: 1.5rem;
+}
+
+.card-container {
+  height: auto;
+  margin: 0 12rem;
+  justify-content: center;
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+}
+
+.card-body img {
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.about-section {
+    height: auto;
+    padding: 5rem 0;
+    background-color: #f8f9fa;
+}
+.about-section .content {
+    display: flex;
+    align-items: center;
+}
+.about-section .text {
+    margin-left: 20px;
+}
+.about-section .text h2 {
+    color: #c3831c;
+}
+.about-section img {
+    max-width: 100%;
+    height: 300px;
+}
+.mission-vision {
+    background-color: #fff;
+    padding: 3rem 0;
+}
+.mission-vision h3 {
+    color: #c3831c;
+}
+.mission-vision .text {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+
+
+
+/* Responsive Layout Setting's */
+
+@media only screen and (max-device-width: 480px) {
+    .nav {
+      display: flex;
+      padding: 0rem;
+    }
+
+    .container-fluid {
+          margin-left: 0rem;
+         padding: 0;
+        }
 }
