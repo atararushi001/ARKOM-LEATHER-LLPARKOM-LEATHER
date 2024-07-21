@@ -1,10 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
+
+        :root {
+            /* #f8f9fa,  #e9ecef*/
+            --bg-color: #f8f9fa;
+            --setion-color-00: #f8f9fa; 
+            --setion-color-01: #F8EDED;
+            --header-color: #f1a222;
+            --highlight-color: #c3831c;
+            /* theme 1:  #F8EDED, #eae0d7*/
+            /* theme 1:  #F8EDED, #f8f9fa*/
+        }
+
+
         body {
           /* font-family: monospace; */
           letter-spacing: 0.1rem;
           /* font-style: italic; */
           font-family: "Roboto Condensed", sans-serif;
+          background: var(--bg-color);
 
         }
 
@@ -13,17 +27,40 @@
         }
 
         h2 {
+            color: var(--header-color);
             font-size: 5rem;
             font-weight: 800;
             text-transform: uppercase;
         }
 
         p {
-            font-weight: 400;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        .highlight {
+            color: var(--highlight-color);
+        }
+
+        .seperator {
+            background: #f1a222;
+            display: flex;
+            margin: 3rem 12rem;
+            justify-content: center;
+            height: 12px;
+        }
+
+        .vertical-seperator {
+            background: #f1a222;
+            justify-content: center;
+            height: 10rem;
+            width: 20px;
         }
 
         .navbar {
+        width: 100%;
           display: flex;
+          position: absolute;
           padding: 0.8rem 2rem;
         }
 
@@ -41,6 +78,16 @@
 
         .nav-link:hover{
           color: #f1a222;
+        }
+    
+        .dropdown-menu, .dropdown-item {
+            color: #fff;
+            background-color: transparent;
+        }
+
+        .dropdown-menu, .dropdown-item:hover {
+            color: #f1a222;
+            background-color: transparent;
         }
 
         .carousel-item {
@@ -61,13 +108,13 @@
 
         .section02, .section04 {
           color: #c3831c;
-          background: #171717;
+          background: var(--setion-color-00);
           padding: 1rem;
         }
 
         .section03 {
           color: #c3831c;
-          /* background: #222222; */
+          background: var(--setion-color-01);
           padding: 1rem;
         }
 
@@ -75,7 +122,19 @@
             color: #333;
         }
 
+        .banner {
+            margin: 4rem 0;
+            height: 250px;
+            width: 100%;
+            align-content: center;
+            background-image: url("assets/images/contact-us.jpg");
+            background-size: cover;
+
+        }
+
+
         .card-body {
+          width: 100%;
           padding: 1rem;
           color: #c3831c;
           /* background-color: rgb(36, 25, 4); */
@@ -84,13 +143,13 @@
         .card-body .btn {
           text-decoration: none;
           border: solid 1px white;
-          background-color: #c3831c;
+          background-color: #f1a222;
         }
 
         .card {
-          border: 2px solid white;
+          border: 4px solid #f1a222;
           border-radius: 0;
-          background: #222222;
+          background: transparent;
           transition: transform 0.2s, box-shadow 0.2s;
         }
 
@@ -122,8 +181,7 @@
 }
 
 .btn-primary:hover {
-    background-color: #c3831c;
-    padding: 0 200px;
+    background-color: #f1a222;
     border-width: 3px solid #444;
     animation: all 0.3 ease-out;
 }
@@ -139,7 +197,6 @@
     /* background-color: #f8f9fa; */
     border-top: 2px solid white;
     background: transparent;
-    border-radius: 0.25rem;
     padding: 20px;
 }
 
@@ -153,7 +210,7 @@
 
 .card-text {
     color: #c3831c;
-    font-style: italic;
+    /* font-style: italic; */
 }
 
 /* bold text */
@@ -164,6 +221,12 @@
   display: flex;
   color: #c3831c;
   gap: 40px;
+  transition: transform 0.2s;
+  
+}
+
+.fab:hover {
+    transform: scale(1.15);
 }
 
 footer {
@@ -221,7 +284,7 @@ footer .fab {
     margin-left: 20px;
 }
 .about-section .text h2 {
-    color: #c3831c;
+    color: var(--header-color);
 }
 .about-section img {
     max-width: 100%;
@@ -239,6 +302,12 @@ footer .fab {
     color: #666;
 }
 
+.global-img {
+    display: flex;
+    width: 50%;
+    height: 400px;
+}
+
 
 
 
@@ -254,4 +323,37 @@ footer .fab {
           margin-left: 0rem;
          padding: 0;
         }
+}
+
+
+
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+    width: 12px; /* width of the entire scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* color of the tracking area */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888; /* color of the scroll thumb */
+    border-radius: 10px; /* roundness of the scroll thumb */
+    border: 3px solid #f1f1f1; /* creates padding around the scroll thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* color of the scroll thumb when hovered */
+}
+
+/* Custom scrollbar for Firefox */
+* {
+    scrollbar-width: thin; /* sets the width to thin */
+    scrollbar-color: #888 #f1f1f1; /* sets the color of the thumb and track */
+}
+
+/* Optional: style for the scrollbar on the body element */
+body {
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
 }
