@@ -46,7 +46,7 @@
             font-size: 1.2rem;
             font-weight: 600;
         }
-        
+
         .dropdown-item{
             color: white !important;
         }
@@ -344,10 +344,7 @@ footer .fab {
     display: none;
 } */
  
-.navbar-nav .dropdown:hover > .dropdown-menu {
-    display: block;
-    transition: all 0.3S ease-in;
-}
+
 .dropdown-submenu {
     position: relative;
 }
