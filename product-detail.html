@@ -5,66 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <title>ARKOM - Contact Us</title>
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <title>ARKOM - Product Detail</title>
     <style>
         body {
-            font-family: monospace;
-            letter-spacing: 0.1rem;
+            background-color: #f4f4f4;
             color: #333;
-            background-color: #f8f9fa;
         }
         .navbar {
             padding: 0.8rem 0;
-            background-color: rgb(0,0,0,0.8);
-            backdrop-filter: blur(10px);
+            background-color: #333;
         }
         .navbar a {
-            color: #c3831c;
+            color: #fff;
         }
-        .section {
+        .product-detail-section {
             padding: 5rem 0;
+            background-color: #fff;
         }
-        .section h2 {
-            font-size: 3rem;
-            text-align: center;
-            margin-bottom: 2rem;
+        .product-detail-section .product-image {
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            max-width: 100%;
+        }
+        .product-detail-section .description {
+            margin: 2rem 0;
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+        .product-detail-section .btn {
+            background: #c3831c;
+            color: #fff;
+            border: none;
+        }
+        .product-detail-section .btn:hover {
+            background: #f1a222;
+            color: #fff;
+        }
+        .sidebar {
+            background-color: #f1f1f1;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .sidebar h3 {
+            font-size: 1.5rem;
             color: #c3831c;
         }
-        .section p {
-            font-size: 1.1rem;
-            color: #666;
+        .sidebar p {
+            margin: 0.5rem 0;
+            color: #555;
         }
-        .form-control {
-            border-radius: 0.3rem;
+        .sidebar .btn {
+            background: #c3831c;
+            color: #fff;
+            border: none;
         }
-        footer {
-            background-color: #343a40;
+        .sidebar .btn:hover {
+            background: #f1a222;
             color: #fff;
         }
-        footer a {
-            color: #ddd;
-            text-decoration: none;
+        .additional-info {
+            background-color: #f9f9f9;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-top: 2rem;
         }
-        footer a:hover {
-            color: #fff;
-            text-decoration: none;
-        }
-        footer .fab {
+        .additional-info h3 {
             font-size: 1.5rem;
+            color: #c3831c;
+        }
+        .additional-info p {
+            font-size: 1rem;
+            color: #666;
         }
     </style>
 </head>
 <body>
     <!-- Navbar Section Start -->
     <header class="header">
-        <nav class="navbar navbar-expand-lg fixed-top">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <div>
+                <a class="navbar-brand" href="index.html">
                     <img src="assets/images/logo.png" alt="logo-img" height="36px">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
@@ -91,7 +119,8 @@
                             <a class="nav-link" href="inspection.html">Inspection</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact Us</a></li>
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -99,33 +128,24 @@
     </header>
     <!-- Navbar Section End -->
 
-    <!-- Contact Us Section -->
-    <section class="section">
+    <!-- Product Detail Section -->
+    <section class="product-detail-section">
         <div class="container">
-            <h2 class="text-center mb-4">Contact Us</h2>
             <div class="row">
                 <div class="col-md-6">
-                    <p>We'd love to hear from you! Please reach out with any questions, feedback, or inquiries you may have. Our team is here to assist you.</p>
-                    <p><strong>Email:</strong> contact@leathershop.com</p>
-                    <p><strong>Phone:</strong> +123 456 7890</p>
-                    <p><strong>Address:</strong> 123 Leather Street, City, Country</p>
+                    <img src="assets/images/bg01.jpg" alt="Product Detail Image" class="product-image">
                 </div>
                 <div class="col-md-6">
-                    <form>
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="name" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="email" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea class="form-control" id="message" rows="4" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-outline-dark">Send Message</button>
-                    </form>
+                    <h2>Product 1</h2>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tincidunt orci at dui commodo, sed laoreet ex iaculis. Proin varius, nisi et feugiat consectetur, felis odio iaculis arcu, sed volutpat erat nisl id augue. Duis aliquet arcu in velit venenatis.</p>
+                    <button type="button" class="btn btn-primary">Get the Product</button>
+                </div>
+            </div>
+                <div class="col-md-8">
+                    <div class="additional-info">
+                        <h3>Additional Information</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tincidunt orci at dui commodo, sed laoreet ex iaculis. Proin varius, nisi et feugiat consectetur, felis odio iaculis arcu, sed volutpat erat nisl id augue. Duis aliquet arcu in velit venenatis.</p>
+                    </div>
                 </div>
             </div>
         </div>
